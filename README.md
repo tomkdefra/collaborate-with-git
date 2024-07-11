@@ -17,8 +17,11 @@ To avoid participants prematurely seeing the story file and ruining their surpri
 2. **Commit and push:**
 
     ```bash
+    git status
     git add story.txt
+    git status
     git commit -m "Suddenly, something happened..."
+    git status
     git push origin main
     ```
 
@@ -42,8 +45,11 @@ To avoid participants prematurely seeing the story file and ruining their surpri
 4. **Commit and push:**
 
     ```bash
+    git status
     git add story.txt
+    git status
     git commit -m "and etc..."
+    git status
     git push origin main
     ```
 
@@ -67,15 +73,19 @@ To avoid participants prematurely seeing the story file and ruining their surpri
 4. **Commit and push:**
 
     ```bash
+    git status
     git add story.txt
+    git status
     git commit -m "and etc..."
+    git status
     git push origin main
     ```
 
 ### Final Merge
 
-1. **Facilitator or last participant pulls all changes and combines the parts:**
+1. **Once every participant has had a couple of turns, we can pull all changes and read the story:**
 
     ```bash
     git pull origin main
+    code story.txt
     ```
