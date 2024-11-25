@@ -2,7 +2,7 @@
 
 Welcome to our "Exquisite Corpse" style collaborative story writing game using Git! In this activity, each participant will add to a story with a hint left in the commit message, maintaining the element of surprise.
 
-To avoid participants prematurely seeing the story file and ruining their surprise, we will use the echo command in a Git Bash terminal to add our lines to the story. The -e flag enables interpretation of backslash escapes, so at the end of our addition we can add a \n newline character to keep our story formatting nice and tidy. 
+To avoid participants prematurely seeing the story file and ruining their surprise, we will use the echo command in a Git Bash terminal to add our lines to the story. The -e flag enables interpretation of backslash escapes, so at the end of our addition we can add a \n newline character to keep our story formatting nice and tidy. The >> operator appends the new addition to the file. 
 
 ## Workflow
 
@@ -11,7 +11,7 @@ To avoid participants prematurely seeing the story file and ruining their surpri
 1. **Write the first part of the story in `story.txt`:**
 
     ```bash
-    echo -e "Our story is going to be great and stuff is going to happen. Suddenly, something happened... \n" > story.txt
+    echo -e "Our story is going to be great and stuff is going to happen. Suddenly, something happened... \n" >> story.txt
     ```
 
 2. **Commit and push:**
@@ -33,7 +33,10 @@ To avoid participants prematurely seeing the story file and ruining their surpri
     git pull origin main
     ```
 
-2. **See commit message hint:**
+2. **Check the commit message hint:**
+    ```bash
+    git log --oneline -1
+    ```
     - _Suddenly, something happened..._
 
 3. **Write the next part of the story in `story.txt`:**
@@ -61,7 +64,10 @@ To avoid participants prematurely seeing the story file and ruining their surpri
     git pull origin main
     ```
 
-2. **See commit message hint:**
+2. **Check the commit message hint:**
+    ```bash
+    git log --oneline -1
+    ```
     - _and etc..._
 
 3. **Write the next part of the story in `story.txt`:**
@@ -87,5 +93,5 @@ To avoid participants prematurely seeing the story file and ruining their surpri
 
     ```bash
     git pull origin main
-    code story.txt
+    cat story.txt
     ```
