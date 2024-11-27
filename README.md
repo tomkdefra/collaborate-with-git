@@ -1,6 +1,6 @@
 # Collaborative Story Writing with Git and GitHub
 
-Welcome to our "Exquisite Corpse" style collaborative story writing game using Git! In this activity, each participant will add to a story with a hint left in the commit message, maintaining the element of surprise.
+Welcome to our "Exquisite Corpse" style collaborative story writing game using Git! In this activity, each participant will add to a story with a hint left in the commit message, maintaining the element of surprise. 
 
 To avoid participants prematurely seeing the story file and ruining their surprise, we will use the echo command in a Git Bash terminal to add our lines to the story. The -e flag enables interpretation of backslash escapes, so at the end of our addition we can add a \n newline character to keep our story formatting nice and tidy. The >> operator appends the new addition to the file. 
 
